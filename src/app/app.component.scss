@@ -1,0 +1,32 @@
+::ng-deep{
+    .maps{
+        position: absolute !important;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        .map-container{
+            position: absolute !important;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100% !important;
+            height: 100vh !important;
+            > div{
+                position: absolute !important;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100% !important;
+                height: 100vh !important;
+            }
+        }
+    }
+}
+.float-card{
+    z-index: 9999;
+}

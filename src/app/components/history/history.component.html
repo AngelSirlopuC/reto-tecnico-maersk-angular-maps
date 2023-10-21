@@ -1,0 +1,29 @@
+<div class="card m-4">
+    <div class="card-header">Historial</div>
+    <div class="card-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Tiempo Segundos</th>
+            <th>Orientación</th>
+            <th>distancia Metros</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let his of currentMarker; let i = index" >
+            <tr *ngIf="i > 0">
+              <td>
+                {{(i) * 30}} seg
+              </td>
+              <td>
+                {{his.orientation}}
+              </td>
+              <td>
+                {{his.distance}}
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>

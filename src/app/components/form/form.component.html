@@ -1,0 +1,30 @@
+
+<div class="card m-4 ">
+    <div class="card-body">
+      <form [formGroup]="formulario" (submit)="addVehicule($event)">
+        <div class="mb-3">
+          <label for="placa" class="form-label">Placa</label>
+          <input type="text" class="form-control" id="placa" formControlName="placa"  required placeholder="ejm: XT4-135">
+        </div>
+        <div class="mb-3">
+          <label for="placa" class="form-label">Tipo</label>
+          <select class="form-select" formControlName="tipo" required>
+            <option value="1" selected>Auto</option>
+            <option value="2">Tractor</option>
+            <option value="3">Camión</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="latitud" class="form-label">Latitud</label>
+          <input type="text" class="form-control" id="latitud" formControlName="latitud" required>
+        </div>
+        <div class="mb-3">
+          <label for="longitud" class="form-label">Longitud</label>
+          <input type="text" class="form-control" id="longitud" formControlName="longitud" required>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-success" type="submit">Agregar</button>
+        </div>
+      </form>
+    </div>
+  </div>
